@@ -1,0 +1,41 @@
+Types of tests
+
+- unit (tests one piece of code);
+- integration (how multiple units work together);
+- end-to-end (user experience on browser and connections to server);
+- functional (focuses on user flow).
+
+--------------------------------------------------------------------------------------------------------
+
+Information of tests
+
+- test behavior, not implementation (what the app should do);
+- easy diagnosis of failed test;
+- Code-based (implementation)
+-- ease of diagnosis;
+-- brittle tests.
+- functional (bahavioral)
+-- more rebusts tests;
+-- more difficult to find out what caused the failures.
+
+--------------------------------------------------------------------------------------------------------
+
+Enzyme (https://enzymejs.github.io/enzyme/)
+
+- we need to use an adapter to configure the Enzyme ( Enzyme.configure({ adapter: NAME_ADAPTER }) );
+- shallow to render an specific component without children;
+- using shallow you can use .debug() to search where is the problem;
+- .exists returns whether or not the current node exists;
+
+--------------------------------------------------------------------------------------------------------
+
+Jest (https://jestjs.io/pt-BR/)
+
+- toBe checks that a value is what you expect; 
+
+--------------------------------------------------------------------------------------------------------
+
+Examples Enzyme + Jest
+
+- expect(wrapper.exists()).toBe(true);
+
