@@ -11,12 +11,19 @@ Information of tests
 
 - test behavior, not implementation (what the app should do);
 - easy diagnosis of failed test;
+
 - Code-based (implementation)
--- ease of diagnosis;
--- brittle tests.
+=> ease of diagnosis;
+=> brittle tests.
+
 - functional (bahavioral)
--- more rebusts tests;
--- more difficult to find out what caused the failures.
+=> more rebusts tests;
+=> more difficult to find out what caused the failures.
+
+- data-test attribute
+=> top level element of component;
+=> id and class have uses in production app and can be changed
+=> data-test is only for testing
 
 --------------------------------------------------------------------------------------------------------
 
@@ -26,6 +33,7 @@ Enzyme (https://enzymejs.github.io/enzyme/)
 - shallow to render an specific component without children;
 - using shallow you can use .debug() to search where is the problem;
 - .exists returns whether or not the current node exists;
+- .find can find every node in DOM tree;
 
 --------------------------------------------------------------------------------------------------------
 
