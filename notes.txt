@@ -25,7 +25,7 @@ Information of tests
 => id and class have uses in production app and can be changed
 => data-test is only for testing
 
-- remove data-test attribute
+- remove data-test attribute (https://www.npmjs.com/package/babel-plugin-react-remove-properties)
 => npm i --save-dev babel-plugin-react-remove-properties (to remove properties on build)
 => npm run eject (now we can change app config)
 => update babel config (putting an env with production plugin removing data-test)
